@@ -6,24 +6,27 @@ programa
 
 		inteiro idade
 
+		inteiro diasano = 365
+		inteiro diasmes = 30
+
 		escreva("Olá, por gentileza informe sua idade.")
 
-		escreva("\nDias: ")
+		escreva("\n\nIdade em Dias: ")
 		leia(idade)
 
-		escreva("\nSua idade em anos é de: " + (idade / 30 / 12) + " Anos")
-		escreva("\nSua idade em meses é de: " + (idade / 30) + " Meses")
-		escreva("\nSua idade em dias é de: " + idade + " Dias\n")
+		escreva("\n" + (idade / diasano) + " Anos " + ((idade - ((idade / diasano) * diasano)) / diasmes) + " Meses e " + 
+		((idade - ((idade / diasano) * diasano)) - ((idade - ((idade / diasano) * diasano)) / diasmes) * diasmes) + " Dias\n")
+		
 
 		
 	}
-}
+} 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 339; 
+ * @POSICAO-CURSOR = 9; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

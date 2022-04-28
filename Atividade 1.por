@@ -4,14 +4,20 @@ programa
 	funcao inicio()
 	{
 
-		inteiro tempoSegundos
+		inteiro tempo
+
+		inteiro segundosHora = 3600
+		inteiro segundosMinuto = 60
 
 		escreva("Duração em segundos: ")
-		leia (tempoSegundos)
+		leia (tempo)
 
-		escreva ("\nTempo em horas: ", (tempoSegundos / 3600) + "\n\n")
-		escreva ("Tempo em minutos: ", (tempoSegundos / 60) + "\n\n")
-		escreva ("Tempo em segundos: " + tempoSegundos + "\n")
+		escreva("\nO tempo é de: " + (tempo / segundosHora) + " hora " + 
+		((tempo - ((tempo / segundosHora) * segundosHora)) / segundosMinuto) + " Minutos e " +
+		
+		(((tempo - ((tempo / segundosHora) * segundosHora)) -
+		
+		(((tempo - ((tempo / segundosHora) * segundosHora)) / segundosMinuto) * segundosMinuto))) + " Segundos\n" )
 		
 	}
 }
@@ -20,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 309; 
+ * @POSICAO-CURSOR = 493; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
