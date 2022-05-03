@@ -30,6 +30,8 @@ posição das matrizes N1 e N2.
 				M2[linha][coluna] = N1[linha][coluna] - N2[linha][coluna]
 			}
 		}
+
+		escreva("\nPROGRAMA FINALIZADO!\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -37,7 +39,7 @@ posição das matrizes N1 e N2.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 771; 
+ * @POSICAO-CURSOR = 795; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {N1, 17, 10, 2}-{N2, 17, 20, 2}-{M1, 17, 30, 2}-{M2, 17, 40, 2};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
